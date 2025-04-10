@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уникальная волынка</title>
+    <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+    <link
+      rel="icon"
+      href="./assets/favicon/android-chrome-192x192.png"
+      type="image/png">
+    <link
+      rel="icon"
+      href="assets/favicon/apple-touch-icon.png"
+      type="image/png">
+    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="parchment">
+      <h1>Волынка: Голос тысячелетий</h1>
+
+      <p>
+        <span class="initial">Д</span>оподлинно неизвестно, когда появились
+        волынки, но согласно археологическим данным, в десятом веке до Нашей Эры
+        они уже существовали. Этот необычный музыкальный инструмент, как
+        полагают некоторые исследователи, появился на Ближнем Востоке и в
+        средней Азии, откуда был завезён в Европу древними римлянами и
+        постепенно получил повсеместное распространение. Аналоги волынки есть
+        практически у многих народов от Китая до Атлантики.
+      </p>
+
+      <div class="bagpipe-container" id="bagpipe">
+        <img
+          src="./images/IMG_20250409_212925_4.jpg"
+          alt="Редчайшая волынка"
+          class="bagpipe-img">
+        <p>Кликните на изображение волынки, чтобы посмотреть видео.</p>
+      </div>
+
+      <p>
+        Это видео об уникальной волынке, за основу которой взята малая
+        германская (североевропейская) волынка (Hummelchen) с элементами
+        ирландской (Uilleann pipes) (stopdrone key и форма мешка) с барочной
+        (английской) аппликатурой блокфлейты, полная хроматика (первая октава от
+        C плюс C,C#,D второй), перенастраиваемые дроны (баритон - F,G,A, бас -
+        C,D, контрабас - G,A), единственный уникальный экземпляр в своём роде.
+      </p>
+
+      <!-- Фотогалерея -->
+      <div class="gallery">
+        <div class="gallery-title">Галерея Uilleann Hummelchen Recorder</div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img
+              src="./images/IMG_20250409_212824_9.jpg"
+              alt="Редчайшая волынка"
+              class="gallery-img">
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./images/IMG_20250409_213053_6.jpg"
+              alt="Редчайшая волынка"
+              class="gallery-img">
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./images/IMG_20250409_213127_3.jpg"
+              alt="Редчайшая волынка"
+              class="gallery-img">
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./images/IMG_20250409_213253_4.jpg"
+              alt="Редчайшая волынка"
+              class="gallery-img">
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./images/IMG_20250409_213324_1.jpg"
+              alt="Редчайшая волынка"
+              class="gallery-img">
+          </div>
+        </div>
+      </div>
+
+      <p>
+        Сделана в феврале 2016 года, мастер Sonoda T., Германия. Инструмент
+        выполнен из оливкового дерева с инкрустацией из латуни и дерева умнини
+        (розовая кость), мешок - коровья кожа, мехи (т.н."лягушка") - конская,
+        коровья кожа, деки - агатис новозеландский, клапан - оливковое дерево.
+        Трости - пластик.
+      </p>
+    </div>
+
+    <!-- Модальное окно для галереи с горизонтальной прокруткой -->
+    <div id="modal-gallery" class="modal-gallery">
+      <span class="close-gallery">&times;</span>
+      <div class="modal-gallery-content">
+        <button class="gallery-nav prev">&#10094;</button>
+        <img id="expanded-img" class="modal-gallery-img">
+        <button class="gallery-nav next">&#10095;</button>
+      </div>
+    </div>
+
+    <!-- Модальное окно для видео -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://rutube.ru/video/embed/4b19d4289bb331b507ca9554d2d166ec/"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

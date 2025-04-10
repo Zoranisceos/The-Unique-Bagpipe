@@ -1,0 +1,226 @@
+/* Основные стили */
+body {
+  font-family: "Uncial Antiqua", cursive; /* Старинный шрифт */
+  background-color: rgb(237, 234, 226); /* Цвет фона-подложки */
+  background-image: url("./images/abstract-background/90698.jpg"); /* Фоновое изображение */
+  background-size: cover; /* Растягиваем на весь экран */
+  color: rgb(58, 40, 16); /* Цвет текста (коричневатый) */
+  margin: 0; /* Убираем отступы по умолчанию */
+  padding: 0;
+  line-height: 25.6px; /* Межстрочный интервал */
+}
+
+.parchment {
+  max-width: 800px; /* Ограничение ширины контента */
+  margin: 32px auto; /* Центрирование */
+  padding: 32px;
+  background-color: rgb(147, 144, 135); /* Основной цвет фона */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* Градиент для эффекта выцветания */
+  border: 15px solid transparent; /* Прозрачная рамка */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Тень для объема */
+  border-radius: 20px; /* Скругленные углы */
+}
+
+h1 {
+  text-align: center;
+  color: rgb(139, 69, 19);
+  font-size: 40px;
+  margin-bottom: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 19.2px;
+  text-align: justify;
+  margin-bottom: 24px;
+}
+
+.initial {
+  font-size: 32px;
+  float: left;
+  line-height: 1;
+  margin-right: 5px;
+  color: rgb(139, 69, 19);
+}
+
+/* Стили для волынки */
+.bagpipe-container {
+  text-align: center;
+  margin: 32px 0;
+  cursor: pointer;
+}
+
+.bagpipe-img {
+  width: 200px;
+  transition: transform 0.3s; /* Анимация при наведении */
+  border: 8px solid transparent; /* Прозрачная рамка */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+  border-radius: 10px; /* Скругление */
+}
+
+.bagpipe-img:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+}
+
+/* Стили для галереи */
+.gallery {
+  margin: 32px 0;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 24px;
+  color: rgb(139, 69, 19);
+  margin-bottom: 16px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap; /* Перенос на новую строку */
+  justify-content: center;
+  gap: 16px; /* Расстояние между элементами */
+  margin-top: 16px;
+}
+
+.gallery-item {
+  width: 180px;
+  height: 180px;
+  overflow: hidden; /* Обрезка выходящего за границы */
+  border: 8px solid transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s; /* Двойная анимация */
+  border-radius: 10px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Заполнение контейнера с сохранением пропорций */
+  cursor: pointer;
+}
+
+/* Модальные окна */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Фиксированное позиционирование */
+  z-index: 100; /* Поверх других элементов */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный */
+}
+
+.modal-content {
+  background-color: rgb(255, 249, 230);
+  margin: 5% auto;
+  padding: 25px;
+  border: 10px solid rgb(139, 69, 19);
+  width: 70%;
+  max-width: 800px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Соотношение 16:9 */
+  height: 0; /* Для адаптивности видео */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Заполнение контейнера */
+  border: none;
+  border-radius: 10px;
+}
+
+.modal-gallery {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-gallery-content {
+  display: flex;
+  align-items: center;
+  max-width: 90%; /* Ограничение ширины */
+  max-height: 90%; /* Ограничение высоты */
+  position: relative;
+}
+
+.gallery-nav {
+  position: absolute;
+  top: 50%; /* Вертикальное центрирование */
+  transform: translateY(-50%); /* Вертикальное центрирование */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 10;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.gallery-nav:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-nav.prev {
+  left: 15px;
+}
+
+.gallery-nav.next {
+  right: 15px;
+}
+
+.modal-gallery-img {
+  max-width: 100%;
+  max-height: 90vh;
+  border: 15px solid rgb(255, 249, 230);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Плавное изменение */
+}
+
+.close-gallery {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
