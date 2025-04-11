@@ -1,7 +1,7 @@
 body {
   font-family: "Uncial Antiqua", cursive; 
   background-color: rgb(237, 234, 226);
-  background-image: url("main/images/90698.jpg");
+  background-image: url("/90698.jpg");
   background-size: cover;
   color: rgb(58, 40, 16); 
   margin: 0; 
