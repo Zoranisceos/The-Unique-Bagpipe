@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0" >
     <title>Уникальная волынка</title>
-    <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/favicon/favicon.ico" sizes="any" >
     <link
       rel="icon"
       href="./assets/favicon/android-chrome-192x192.png"
-      type="image/png">
+      type="image/png"
+    >
     <link
       rel="icon"
       href="assets/favicon/apple-touch-icon.png"
-      type="image/png">
-    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
-    <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      type="image/png"
+    >
+    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png" >
+    <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css" >
   </head>
 
   <body>
@@ -41,19 +46,22 @@
         <img
           src="./images/IMG_20250409_212925_4.jpg"
           alt="Редчайшая волынка"
-          class="bagpipe-img">
+          class="bagpipe-img"
+        >
         <p>Кликните на изображение волынки, чтобы посмотреть видео.</p>
       </div>
 
       <p>
-        Это видео об уникальной волынке, называемой Uilleann Hummelchen Recorder, за основу которой взята малая
-        германская (североевропейская) волынка (Hummelchen) с элементами
-        ирландской (Uilleann pipes) (stopdrone key и форма мешка) с барочной
-        (английской) аппликатурой блокфлейты, полная хроматика (первая октава от
-        C плюс C,C#,D второй), перенастраиваемые дроны (баритон - F,G,A, бас -
-        C,D, контрабас - G,A), единственный уникальный экземпляр в своём роде.
+        Это видео об уникальной волынке, называемой Uilleann Hummelchen
+        Recorder, за основу которой взята малая германская (североевропейская)
+        волынка (Hummelchen) с элементами ирландской (Uilleann pipes) (stopdrone
+        key и форма мешка) с барочной (английской) аппликатурой блокфлейты,
+        полная хроматика (первая октава от C плюс C,C#,D второй),
+        перенастраиваемые дроны (баритон - F,G,A, бас - C,D, контрабас - G,A),
+        единственный уникальный экземпляр в своём роде.
       </p>
 
+      <!-- Фотогалерея -->
       <div class="gallery">
         <div class="gallery-title">Галерея Uilleann Hummelchen Recorder</div>
         <div class="gallery-container">
@@ -61,31 +69,36 @@
             <img
               src="./images/IMG_20250409_212824_9.jpg"
               alt="Редчайшая волынка"
-              class="gallery-img">
+              class="gallery-img"
+            >
           </div>
           <div class="gallery-item">
             <img
               src="./images/IMG_20250409_213053_6.jpg"
               alt="Редчайшая волынка"
-              class="gallery-img">
+              class="gallery-img"
+            >
           </div>
           <div class="gallery-item">
             <img
               src="./images/IMG_20250409_213127_3.jpg"
               alt="Редчайшая волынка"
-              class="gallery-img">
+              class="gallery-img"
+            >
           </div>
           <div class="gallery-item">
             <img
               src="./images/IMG_20250409_213253_4.jpg"
               alt="Редчайшая волынка"
-              class="gallery-img">
+              class="gallery-img"
+            >
           </div>
           <div class="gallery-item">
             <img
               src="./images/IMG_20250409_213324_1.jpg"
               alt="Редчайшая волынка"
-              class="gallery-img">
+              class="gallery-img"
+            >
           </div>
         </div>
       </div>
@@ -99,15 +112,17 @@
       </p>
     </div>
 
+    <!-- Модальное окно для галереи с горизонтальной прокруткой -->
     <div id="modal-gallery" class="modal-gallery">
       <span class="close-gallery">&times;</span>
       <div class="modal-gallery-content">
         <button class="gallery-nav prev">&#10094;</button>
-        <img id="expanded-img" class="modal-gallery-img">
+        <img id="expanded-img" class="modal-gallery-img" >
         <button class="gallery-nav next">&#10095;</button>
       </div>
     </div>
 
+    <!-- Модальное окно для видео -->
     <div id="modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
