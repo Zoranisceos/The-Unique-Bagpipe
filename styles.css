@@ -1,28 +1,27 @@
-/* Основные стили */
 body {
-  font-family: "Uncial Antiqua", cursive; /* Старинный шрифт */
-  background-color: rgb(237, 234, 226); /* Цвет фона-подложки */
-  background-image: url("./images/abstract-background/90698.jpg"); /* Фоновое изображение */
-  background-size: cover; /* Растягиваем на весь экран */
-  color: rgb(58, 40, 16); /* Цвет текста (коричневатый) */
-  margin: 0; /* Убираем отступы по умолчанию */
+  font-family: "Uncial Antiqua", cursive; 
+  background-color: rgb(237, 234, 226);
+  background-image: url("./images/abstract-background/90698.jpg");
+  background-size: cover;
+  color: rgb(58, 40, 16); 
+  margin: 0; 
   padding: 0;
-  line-height: 25.6px; /* Межстрочный интервал */
+  line-height: 25.6px; 
 }
 
 .parchment {
-  max-width: 800px; /* Ограничение ширины контента */
-  margin: 32px auto; /* Центрирование */
+  max-width: 800px; 
+  margin: 32px auto;
   padding: 32px;
-  background-color: rgb(147, 144, 135); /* Основной цвет фона */
+  background-color: rgb(147, 144, 135); 
   background-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.3) 0%,
     rgba(255, 255, 255, 0) 100%
-  ); /* Градиент для эффекта выцветания */
-  border: 15px solid transparent; /* Прозрачная рамка */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Тень для объема */
-  border-radius: 20px; /* Скругленные углы */
+  ); 
+  border: 15px solid transparent; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  border-radius: 20px; 
 }
 
 h1 {
@@ -56,17 +55,16 @@ p {
 
 .bagpipe-img {
   width: 200px;
-  transition: transform 0.3s; /* Анимация при наведении */
-  border: 8px solid transparent; /* Прозрачная рамка */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
-  border-radius: 10px; /* Скругление */
+  transition: transform 0.3s; 
+  border: 8px solid transparent; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px; 
 }
 
 .bagpipe-img:hover {
-  transform: scale(1.05); /* Увеличение при наведении */
+  transform: scale(1.05); 
 }
 
-/* Стили для галереи */
 .gallery {
   margin: 32px 0;
   text-align: center;
@@ -81,19 +79,19 @@ p {
 
 .gallery-container {
   display: flex;
-  flex-wrap: wrap; /* Перенос на новую строку */
+  flex-wrap: wrap; 
   justify-content: center;
-  gap: 16px; /* Расстояние между элементами */
+  gap: 16px; 
   margin-top: 16px;
 }
 
 .gallery-item {
   width: 180px;
   height: 180px;
-  overflow: hidden; /* Обрезка выходящего за границы */
+  overflow: hidden; 
   border: 8px solid transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s; /* Двойная анимация */
+  transition: transform 0.3s, box-shadow 0.3s; 
   border-radius: 10px;
 }
 
@@ -105,20 +103,19 @@ p {
 .gallery-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Заполнение контейнера с сохранением пропорций */
+  object-fit: cover; 
   cursor: pointer;
 }
 
-/* Модальные окна */
 .modal {
-  display: none; /* Скрыто по умолчанию */
-  position: fixed; /* Фиксированное позиционирование */
-  z-index: 100; /* Поверх других элементов */
+  display: none; 
+  position: fixed; 
+  z-index: 100;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный */
+  background-color: rgba(0, 0, 0, 0.8); 
 }
 
 .modal-content {
@@ -143,8 +140,8 @@ p {
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* Соотношение 16:9 */
-  height: 0; /* Для адаптивности видео */
+  padding-bottom: 56.25%;
+  height: 0; 
   overflow: hidden;
 }
 
@@ -153,7 +150,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Заполнение контейнера */
+  height: 100%; 
   border: none;
   border-radius: 10px;
 }
@@ -174,15 +171,15 @@ p {
 .modal-gallery-content {
   display: flex;
   align-items: center;
-  max-width: 90%; /* Ограничение ширины */
-  max-height: 90%; /* Ограничение высоты */
+  max-width: 90%; 
+  max-height: 90%; 
   position: relative;
 }
 
 .gallery-nav {
   position: absolute;
-  top: 50%; /* Вертикальное центрирование */
-  transform: translateY(-50%); /* Вертикальное центрирование */
+  top: 50%; 
+  transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -212,7 +209,7 @@ p {
   border: 15px solid rgb(255, 249, 230);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  transition: transform 0.3s ease; /* Плавное изменение */
+  transition: transform 0.3s ease; 
 }
 
 .close-gallery {
