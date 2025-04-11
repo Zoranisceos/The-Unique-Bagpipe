@@ -205,6 +205,7 @@ p {
 
 .modal-gallery-img {
   max-width: 100vh;
+  overflow-x: auto;
   max-height: 90vh;
   border: 15px solid rgb(255, 249, 230);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
